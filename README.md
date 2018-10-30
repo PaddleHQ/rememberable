@@ -1,10 +1,23 @@
+# Paddle note
+
+## Facts
+  * Eloquent removed all query caching capability on 5.0.
+  * Paddle's monolith used it automagically in several places, most notably on an in-request duplicate query cache
+  * Paddle's monolith has been upgraded past Laravel 5.0
+  * This is a fork of [watson/remberable](https://github.com/dwightwatson/rememberable)
+  * `watson/remberable` is abandoned
+  
+This fork is meant to give us control of the library for as long as the relevant parts of the monolith still require the Caching trait.
+
+## Changes from upstream
+  * Removed unused dependencies
+  * Revised composer requirements
+  * Rename package
+  * Renamespace library
+  * Bumped version to 3.0
+  
 Rememberable, Laravel 5 query cache
 ===================================
-
-[![Total Downloads](https://poser.pugx.org/watson/rememberable/downloads.svg)](https://packagist.org/packages/watson/rememberable)
-[![Latest Stable Version](https://poser.pugx.org/watson/rememberable/v/stable.svg)](https://packagist.org/packages/watson/rememberable)
-[![Latest Unstable Version](https://poser.pugx.org/watson/rememberable/v/unstable.svg)](https://packagist.org/packages/watson/rememberable)
-[![License](https://poser.pugx.org/watson/rememberable/license.svg)](https://packagist.org/packages/watson/rememberable)
 
 Rememberable is an Eloquent trait for Laravel 5.0+ that brings back the `remember()` query functions from Laravel 4.2. This makes it super easy to cache your query results for an adjustable amount of time.
 
