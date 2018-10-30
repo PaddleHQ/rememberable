@@ -42,7 +42,7 @@ The easiest way to get started with Eloquent is to create an abstract `App\Model
 <?php
 namespace App;
 
-use Watson\Rememberable\Rememberable;
+use Paddle\Eloquent\Rememberable\Rememberable;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 abstract class Model extends Eloquent
