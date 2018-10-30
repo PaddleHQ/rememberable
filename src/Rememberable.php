@@ -1,8 +1,8 @@
 <?php
 
-namespace Watson\Rememberable;
+namespace Paddle\Eloquent\Rememberable;
 
-use Watson\Rememberable\Query\Builder;
+use Paddle\Eloquent\Rememberable\Query\Builder;
 
 trait Rememberable
 {

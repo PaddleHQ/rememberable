@@ -1,6 +1,6 @@
 <?php
 
-namespace Watson\Rememberable\Query;
+namespace Paddle\Eloquent\Rememberable\Query;
 
 use DateTime;
 
