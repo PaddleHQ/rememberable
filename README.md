@@ -30,11 +30,23 @@ It works by simply remembering the SQL query that was used and storing the resul
 
 ## Installation
 
+Add this repo to `composer.json` repos:
+```json
+	"repositories": [
+		{
+			"type": "git",
+			"url":  "git@github.com:PaddleHQ/rememberable.git"
+		}
+	]
+```
+
 Install using Composer, just as you would anything else.
 
 ```sh
-composer require watson/rememberable
+composer require paddlehq/eloquent-rememberable
 ```
+
+
 
 The easiest way to get started with Eloquent is to create an abstract `App\Model` which you can extend your application models from. In this base model you can import the rememberable trait which will extend the same caching functionality to any queries you build off your model.
 
